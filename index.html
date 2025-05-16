@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - gdrfth Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 0 auto;
+            max-width: 1024px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        main {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1558799401-392d3c906a94') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        .about {
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #333;
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .testimonials {
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .contact {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact button {
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #555;
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>gdrfth Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to gdrfth Blog</h2>
+        </section>
+        <section class="about">
+            <h2>About reghh</h2>
+            <p>Reghh is a visionary enterprise committed to transforming the professional landscape through innovative solutions and unparalleled expertise. Our mission is to empower individuals and organizations by providing cutting-edge tools and insights that foster growth and success. At the heart of reghh is a dedicated team of experts who are passionate about driving change and making a meaningful impact in the world. We cater to a diverse audience, including entrepreneurs, business leaders, and professionals across various industries, who seek to stay ahead in an ever-evolving market.</p>
+            <p>Our approach is rooted in a deep understanding of our clients' needs and challenges. We pride ourselves on delivering customized solutions that are both practical and forward-thinking. Whether you're looking to enhance your business operations, develop new strategies, or leverage the latest technologies, reghh is here to guide you every step of the way. Join us on this journey of discovery and innovation, and let's create a brighter future together.</p>
+            <ul>
+                <li>Innovative Solutions</li>
+                <li>Expert Insights</li>
+                <li>Customized Strategies</li>
+                <li>Technology Integration</li>
+            </ul>
+        </section>
+        <section class="services">
+            <div class="service-item">
+                <h3><i class="fas fa-lightbulb"></i> Consulting</h3>
+                <p>Our consulting services are designed to help you navigate complex business challenges and seize new opportunities.</p>
+            </div>
+            <div class="service-item">
+                <h3><i class="fas fa-chart-line"></i> Strategy</h3>
+                <p>Develop effective strategies that align with your business goals and drive sustainable growth.</p>
+            </div>
+            <div class="service-item">
+                <h3><i class="fas fa-cogs"></i> Technology</h3>
+                <p>Leverage the latest technologies to enhance your business operations and stay competitive in the market.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"Reghh has been a game-changer for our business. Their insights and strategies have led us to unprecedented growth."</p>
+                <footer>- Alex Johnson, CEO of Innovate Corp</footer>
+            </blockquote>
+            <blockquote>
+                <p>"The team at reghh truly understands our needs and consistently delivers exceptional service."</p>
+                <footer>- Sarah Lee, Founder of Tech Solutions</footer>
+            </blockquote>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 gdrfth. All rights reserved.</p>
+    </footer>
+</body>
+</html>
